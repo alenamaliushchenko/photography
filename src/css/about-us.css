@@ -1,7 +1,7 @@
 .about-us-title {
   font-size: 28px;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: -0.04em;
   line-height: calc(32 / 28);
   margin-bottom: 40px;
 }
@@ -22,7 +22,6 @@
 @media only screen and (min-width: 768px) {
   .about-us-title {
     font-size: 48px;
-    letter-spacing: 0.04em;
     margin-bottom: 50px;
     line-height: calc(54 / 48);
   }
