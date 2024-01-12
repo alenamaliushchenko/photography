@@ -1,42 +1,44 @@
-.about-title {
+.about-us-title {
   font-size: 28px;
-  font-style: normal;
+  font-weight: 500;
   letter-spacing: 0.04em;
+  line-height: calc(32 / 28);
   margin-bottom: 40px;
 }
 .list-description {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin-top: 40px;
   gap: 20px;
 }
-.description-item {
+.list-description-text {
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 1.28;
+  line-height: calc(18 / 14);
   letter-spacing: -0.02em;
-  text-align: start;
+}
+.list-description-item {
 }
 @media only screen and (min-width: 768px) {
-    .about-title {
-        font-size: 48px;
-        line-height: 1.12;
-        letter-spacing: 0.04em;
-        margin-bottom: 50px;
-    }
-    .list-description {
-        flex-direction: row;
-        gap: 40px;
-        align-items: start;
-    }
-
-    .description-item {
-        font-size: 16px;
-        line-height: 1.25;
-        width: 280px;
-    }
+  .about-us-title {
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 50px;
+    line-height: calc(54 / 48);
+  }
+  .list-description {
+    flex-direction: row;
+    gap: 40px;
+    align-items: start;
+  }
+  .list-description-text {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+  }
+  .list-description-item {
+    width: 280px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -47,12 +49,11 @@
   .list-description {
     margin-top: 0;
     gap: 20px;
-    
   }
-  .description-item {
+  .list-description-item {
     width: 266px;
   }
-  .about-picture {
+  .about-us-picture {
     margin-right: 40px;
   }
   .about-pic {
