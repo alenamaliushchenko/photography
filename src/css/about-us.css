@@ -29,7 +29,7 @@
     .list-description {
         flex-direction: row;
         gap: 40px;
-        max-width: 600px;
+        align-items: start;
     }
 
     .description-item {
@@ -42,11 +42,21 @@
 @media only screen and (min-width: 1280px) {
   .about-content {
     display: flex;
+    max-width: 1080px;
   }
   .list-description {
     margin-top: 0;
+    gap: 20px;
+    
+  }
+  .description-item {
+    width: 266px;
   }
   .about-picture {
-    margin-right: 50px;
+    margin-right: 40px;
+  }
+  .about-pic {
+    width: auto;
+    height: auto;
   }
 }
