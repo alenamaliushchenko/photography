@@ -1,0 +1,47 @@
+.about-title {
+  font-size: 28px;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  margin-bottom: 40px;
+}
+.about-span {
+  color: #bea69e;
+}
+.list-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;
+  gap: 20px;
+}
+.description-item {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: start;
+}
+@media only screen and (min-width: 768px) {
+    .about-title {
+        font-size: 48px;
+        line-height: 1.12;
+        letter-spacing: 0.04em;
+        margin-bottom: 50px;
+    }
+    .list-description {
+        flex-direction: row;
+        gap: 40px;
+        max-width: 600px;
+    }
+
+    .description-item {
+        font-size: 16px;
+        line-height: 1.25;
+        width: 280px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+  
+}
