@@ -4,9 +4,6 @@
   letter-spacing: 0.04em;
   margin-bottom: 40px;
 }
-.about-span {
-  color: #bea69e;
-}
 .list-description {
   display: flex;
   flex-direction: column;
@@ -43,5 +40,13 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  
+  .about-content {
+    display: flex;
+  }
+  .list-description {
+    margin-top: 0;
+  }
+  .about-picture {
+    margin-right: 50px;
+  }
 }
