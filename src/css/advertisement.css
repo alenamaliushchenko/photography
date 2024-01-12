@@ -1,0 +1,41 @@
+.advertisement {
+    overflow: hidden;
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    padding: 24px 0px;
+}
+
+.advertisement__inner {
+    display: flex;
+}
+
+.advertisement__line {
+    flex-shrink: 0;
+    margin: 0;
+    padding: px 15px;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    color: #ffffff;
+}
+
+.accent {
+    color: #BEA69E;
+}
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
