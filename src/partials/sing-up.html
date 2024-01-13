@@ -1,52 +1,61 @@
 <section class="section">
   <div class="sign-up container">
-    <div class="sign-up-form">
-      <h3>Sign <span class="accent">Up</span></h3>
-      <p>
-        Please use the form below to contact us. Enter your name, email, and
-        message and we'll get back to you shortly.
-      </p>
+    <!-- <form action="#" class="sign-up-form form" name="sign-up"> -->
+    <h3 class="sign-up-title">Sign <span class="accent">Up</span></h3>
+    <p class="sign-up-description">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <form action="#" class="sign-up-form form">
+      <div class="sign-up-wrapper">
+        <label class="form-field" for="user-name">Enter your name</label>
+        <input
+          class="form-field"
+          type="text"
+          id="user-name"
+          name="user-name"
+          required=""
+          placeholder="Enter your name"
+          pattern="[A-Za-zА-Яа-яЁё\s]{2,}"
+          title="Please enter at least 2 characters, only letters and spaces are allowed"
+        />
+      </div>
+      <div class="sign-up-wrapper">
+        <label class="form-field" for="user-email">Enter your email</label>
+        <input
+          class="form-field"
+          type="email"
+          name="user-email"
+          id="user-email"
+          required=""
+          minlength="2"
+          placeholder="Enter your email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          title="Please enter a valid email address"
+        />
+      </div>
+      <div class="sign-up-wrapper">
+        <label class="form-field" for="user-message">Message</label>
+        <textarea
+          class="form-field"
+          name="user-message"
+          id="user-message"
+          required=""
+          maxlength="255"
+          placeholder="Message"
+          title="Please enter your message (up to 255 characters)"
+        ></textarea>
+      </div>
+    </form>
+    <button class="form-btn" type="submit">
+      <span class="send-text">Send</span>
+    </button>
+    <p class="privacy-policy">
+      By clicking on “Send” button, you agree to our
+      <a class="privacy-policy-link" href="/privacy-policy">Privacy Policy</a>
+      , and allow Promodo to use this information for marketing purposes.
+    </p>
 
-      <form action="#" class="sign-up-form form" name="sign-up">
-        <div class="form-wrapper">
-          <label class="form-field" for="user-name">Enter your name</label>
-          <input
-            type="text"
-            id="user-name"
-            name="user-name"
-            pattern="[A-Za-zА-Яа-яЁё\s]{2,}"
-            required=""
-            placeholder="Enter your name"
-            title="Please enter at least 2 characters, only letters and spaces are allowed"
-          />
-          <label class="form-field" for="user-email">Enter your email</label>
-          <input
-            type="email"
-            name="user-email"
-            id="user-email"
-            required=""
-            minlength="2"
-            placeholder="Enter your email"
-            title="Please enter a valid email address"
-          />
-          <label class="form-field" for="user-message">Message</label>
-          <textarea
-            name="user-message"
-            id="user-message"
-            required=""
-            maxlength="255"
-            placeholder="Message"
-            title="Please enter your message (up to 255 characters)"
-          ></textarea>
-        </div>
-        <button class="form-btn" type="submit">Send</button>
-        <p class="privacy-policy">
-          By clicking on “Send” button, you agree to our
-          <a href="/privacy-policy">Privacy Policy</a> , and allow Promodo to
-          use this information for marketing purposes.
-        </p>
-      </form>
-    </div>
     <!-- <div class="sign-up-background">
       <img src="../img/video-entry-product 1sing-up1280@2x_result.png" alt="" />
     </div> -->
