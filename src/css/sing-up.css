@@ -1,0 +1,25 @@
+/* .sign-up.container {
+  display: flex;
+  
+} */
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.form-field {
+  display: block;
+}
+textarea {
+  resize: none;
+}
