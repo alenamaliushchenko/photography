@@ -1,49 +1,39 @@
 /* Mobile */
-@media only screen and (min-width: 320px) {
     .footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.2) ;
         background-image: url(../img/Graphicfooter-line@1x_result.png);
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-position: center;
-        background-size: cover;
-        color: #FFF;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: calc(18 / 48);
-        text-transform: uppercase;
-    }
+        background-size: 499px 880px;
+        padding-top: 40px;
+        padding-bottom: 20px;
     
+    }
+
+    .footer-wrapper {
+        max-width: 375px;
+        max-height: 535px;
+    }
+
     .logo-footer {
         fill: #FFF;
-        margin-top: 40px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-starts;
+        margin-bottom: 16px;
     }
     
-    .contacts {
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 40px;
+   }
+
+    .footer-contacts-link {
         color: #FFF;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: calc(18 / 48);
-        height: 46px;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 10px;
-        margin: 16px 0 40px;
-   }
-
-    .contacts-tel {
-        color: #FFF;
-        text-transform: uppercase;
-    }
-
-    .contacts-address {
-        margin-bottom: 40px;
-        text-transform: none;
+        line-height: calc(18 / 14);
+        letter-spacing: -0.02em;
     }
 
     .footer-block-menu {
@@ -53,35 +43,29 @@
     }
     
     .footer-social-networks {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .footer-social-link {
         font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: calc(18 / 48);
-        text-transform: uppercase;
+        line-height: calc(16 / 14);
+        color: #FFF;
+    }
+
+    .footer-menu-list {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 14px;
     }
-
-    .footer-items {
+    .footer-menu-link{ 
         color: #FFF;
-    }
-
-    .footer-link {
-        color: #FFF;
-    }
-
-    .footer-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 14px;
-    }
-    .footer-menu-items{ 
-        display: inline-flex;
-        align-items: flex-start;
-        gap: 40px;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: -0.04em;
     }
 
     .footer-form {
@@ -92,6 +76,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: calc(20 / 48);
+        letter-spacing: -0.04em;
         display: flex;
         flex-direction: row;
         gap: 8px;
@@ -102,10 +87,7 @@
         background: #FFF;
         width: 267px;
         height: 60px;
-    }
-
-    .footer-form-input::placeholder {
-        padding: 20px 0 20px 18px;
+        padding: 20px 18px;
     }
 
     .footer-btn {
@@ -119,40 +101,18 @@
         height: 60px;
         border-radius: 12px;
         background: #1D1D1D;
-        opacity: 0.7;
+    }
+
+    .footer-inform-items {
+        display: flex;
+        justify-content: space-between;
     }
 
     .footer-policy {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        row-gap: 72px;
-        color: #FFF;
         font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: calc(16 / 48);
+        line-height: calc(16 / 12);
+        letter-spacing: -0.04em;
     }
-
-    .footer-right-items {
-        display: inline-flex;
-        color: #FFF;
-        font-family: DM Sans;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: calc(16 / 48);
-    }
-    
-    /* 
-    
-    
-    
-    .footer-items 
-    .footer-link 
-    
-     */
-}
 
 /* Tablet */
 /* @media only screen and (min-width: 768px) {
