@@ -1,30 +1,54 @@
 
+.reviews-section {
+    padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+    .reviews-section {
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .reviews-section {
+        padding-bottom: 150px;
+    }
+}
+
+.reviews-list {
+    display: inline-flex;
+    gap: 20px;
+    justify-content: center;
+}
 
 .reviews-item {
     padding: 20px 20px;
     max-width: 335px;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.20);
-    margin-top: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.20);   
 }
 
 @media only screen and (min-width: 768px) {
     .reviews-item {
         max-width: 640px;
-        margin: auto;
-        margin-top: 50px;
    }
  }
 
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    .reviews-item {
+        margin-left: 32px;
+        margin-right: 32px;
+  }
+}
+
  @media only screen and (min-width: 1280px) {
-    {
-     
-   }
+    .reviews-item {
+        max-width: 530px;
+    }
  }
 
 .reviews-item-student {
     display: inline-flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     margin-bottom: 4px;
@@ -39,6 +63,8 @@
     font-weight: 500;
     line-height: 32px; /* 114.286% */
     letter-spacing: -1.12px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -46,6 +72,8 @@
         font-size: 48px;
         line-height: 54px; /* 112.5% */
         letter-spacing: -1.92px;
+        margin-top: 50px;
+        margin-bottom: 50px;
   }
 }
 
@@ -73,7 +101,6 @@
 }
 .reviews-review-text {
     font-size: 14px;
-    font-weight: 400;
     line-height: 18px; /* 128.571% */
     letter-spacing: -0.28px;
 }
@@ -87,13 +114,16 @@
 }
 
 .reviews-stars-list {
+    display: flex;
     margin-left: 66px;
     margin-bottom: 20px;
     gap: 4px;
 }
 
-.reviews-stars {
-    display: inline-flex;
+@media only screen and (min-width: 768px) {
+    .reviews-stars-list {
+        margin-left: 0;
+  }
 }
 
 .reviews-star {
@@ -105,13 +135,20 @@
         width: 20px;
         height: 20px;
   }
+
     .reviews-item-rate {
         display: flex;
         justify-content: space-between;
         margin-bottom: 23px;
     }
 }
-.reviews-item:last-child {
-    display: none;
-}
 
+.reviews-stars:last-child > .reviews-star {
+    fill: #414141;
+ }
+
+ @media only screen and (max-width: 1280px) {
+    .reviews-item:last-child {
+        display: none;
+    }
+}
