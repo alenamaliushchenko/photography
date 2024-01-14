@@ -1,0 +1,238 @@
+.header {
+    background-color: #121212;
+}
+.container-header {
+    display: flex;
+    padding-top: 20px;
+}
+.container {
+    /* phone */
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media only screen and (min-width:768px) {
+    /* tablet */
+    .container {
+        max-width:768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+@media only screen and (min-width:1280px) {
+    /* dekstop */
+    .container {
+        max-width:1280px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+.nav-header {
+    /* phone */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background-color: #121212;
+
+    padding: 15px 20px;
+    width: 335px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width:768px) {
+    .nav-header {
+        width: 504px;
+        padding: 22px 20px;
+        margin-right: 14px;
+    }
+}
+@media only screen and (min-width:1280px) {
+.nav-header {
+    width: 822px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 20px;
+    display: flex;
+}
+}
+.logo-header {
+    /* phone */
+    margin-right: 98px;
+}
+@media only screen and (min-width:768px) {
+    /* tablet */
+    .logo-header {
+        margin-right: 301px;
+    }
+}
+@media only screen and (min-width:1280px) {
+     /* dekstop */
+   .logo-header {
+   margin-right: 97px;
+}
+}
+@media only screen and (min-width:1280px) {
+    /* dekstop */
+    .list-nav {
+        display:flex;
+        gap: 28px;
+    }
+}
+
+@media only screen and (max-width:1279.98px) {
+    .list-nav {
+        display: none;
+    }
+}
+.items-nav:hover , .items-nav:focus {
+    color: #BEA69E;
+}
+.items-nav {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.btn-camera {
+    margin-right: 14px;
+    background-color: #1D1D1D;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+@media only screen and (min-width:767.98px) {
+    .btn-camera {
+        display: none;
+    }
+}
+.link-camera-header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.icon-camera {
+    fill:#BEA69E;
+    fill-opacity:0.4;
+}
+.menu-burger {
+    background-color: #121212;
+}
+@media only screen and (min-width:1280px) {
+    .menu-burger {
+        display: none;
+    }
+}
+   
+.icon-burger {
+stroke: #ffffff;
+}
+@media only screen and (max-width:767.98px) {
+    .btn-sign-up {
+        display: none;
+    }
+}
+@media only screen and (min-width:768px) {
+    /* tablet */
+    .btn-sign-up {
+       display: inline-flex;
+       padding: 16px 58px;
+       justify-content: center;
+       align-items: center;
+
+       border-radius: 12px;
+       background-color: #FFF;
+
+       color: #121212;
+       font-family: DM Sans;
+       font-size: 18px;
+       font-style: normal;
+      font-weight: 700;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+}
+@media only screen and (min-width:1280px) {
+    /* dekstop */
+    .btn-sign-up {
+        padding: 16px 84px;
+    }
+}
+.btn-sign-up:hover , .btn-sign-up:focus {
+    background-color: #1D1D1D;
+    color: #BEA69E;
+}
+
+.mobile-menu {
+    /* mobile*/
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+    padding-left: 20px;
+
+
+    background-color: #BEA69E;
+    width: 218px;
+    height: 812px;
+    flex-shrink: 0;
+}
+@media only screen and (min-width: 768px) {
+    .mobile-menu {
+        width: 480px;
+        height: 1024px;
+        flex-shrink: 0;
+
+        padding-top: 232px ;
+        padding-left: 64px;
+    }
+    
+}
+@media only screen and (min-width:1280px) {
+    .mobile-menu {
+    display: none;
+    }
+}
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #BEA69E;  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-btn-icon {
+    stroke: #121212;
+}
+.mobile-menu-list {
+    margin-bottom: 133px;
+}
+.mobile-menu-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.mobile-menu-link {
+    color: #121212;
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+.mobile-menu-link.active {
+font-weight: 700;
+}
