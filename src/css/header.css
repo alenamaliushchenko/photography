@@ -5,29 +5,13 @@
     display: flex;
     padding-top: 20px;
 }
+/* phone */
 .container {
-    /* phone */
     max-width: 375px;
     padding-left: 20px;
     padding-right: 20px;
     margin-right: auto;
     margin-left: auto;
-}
-@media only screen and (min-width:768px) {
-    /* tablet */
-    .container {
-        max-width:768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
-@media only screen and (min-width:1280px) {
-    /* dekstop */
-    .container {
-        max-width:1280px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
 }
 .nav-header {
     /* phone */
@@ -35,72 +19,19 @@
     border: 1px solid rgba(255, 255, 255, 0.20);
     background-color: #121212;
 
-    padding: 15px 20px;
     width: 335px;
     flex-shrink: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@media only screen and (min-width:768px) {
-    .nav-header {
-        width: 504px;
-        padding: 22px 20px;
-        margin-right: 14px;
-    }
-}
-@media only screen and (min-width:1280px) {
-.nav-header {
-    width: 822px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-right: 20px;
-    display: flex;
-}
-}
 .logo-header {
     /* phone */
     margin-right: 98px;
 }
-@media only screen and (min-width:768px) {
-    /* tablet */
-    .logo-header {
-        margin-right: 301px;
-    }
-}
-@media only screen and (min-width:1280px) {
-     /* dekstop */
-   .logo-header {
-   margin-right: 97px;
-}
-}
-@media only screen and (min-width:1280px) {
-    /* dekstop */
-    .list-nav {
-        display:flex;
-        gap: 28px;
-    }
-}
-
-@media only screen and (max-width:1279.98px) {
-    .list-nav {
-        display: none;
-    }
-}
-.items-nav:hover , .items-nav:focus {
-    color: #BEA69E;
-}
-.items-nav {
-    color: #FFF;
-    font-family: DM Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
 .btn-camera {
     margin-right: 14px;
     background-color: #1D1D1D;
@@ -108,11 +39,6 @@
     width: 32px;
     height: 32px;
     flex-shrink: 0;
-}
-@media only screen and (min-width:767.98px) {
-    .btn-camera {
-        display: none;
-    }
 }
 .link-camera-header {
     display: flex;
@@ -127,51 +53,9 @@
 .menu-burger {
     background-color: #121212;
 }
-@media only screen and (min-width:1280px) {
-    .menu-burger {
-        display: none;
-    }
-}
-   
 .icon-burger {
-stroke: #ffffff;
-}
-@media only screen and (max-width:767.98px) {
-    .btn-sign-up {
-        display: none;
+    stroke: #ffffff;
     }
-}
-@media only screen and (min-width:768px) {
-    /* tablet */
-    .btn-sign-up {
-       display: inline-flex;
-       padding: 16px 58px;
-       justify-content: center;
-       align-items: center;
-
-       border-radius: 12px;
-       background-color: #FFF;
-
-       color: #121212;
-       font-family: DM Sans;
-       font-size: 18px;
-       font-style: normal;
-      font-weight: 700;
-      line-height: 1.5;
-      text-transform: uppercase;
-    }
-}
-@media only screen and (min-width:1280px) {
-    /* dekstop */
-    .btn-sign-up {
-        padding: 16px 84px;
-    }
-}
-.btn-sign-up:hover , .btn-sign-up:focus {
-    background-color: #1D1D1D;
-    color: #BEA69E;
-}
-
 .mobile-menu {
     /* mobile*/
     position: fixed;
@@ -188,22 +72,7 @@ stroke: #ffffff;
     width: 218px;
     height: 812px;
     flex-shrink: 0;
-}
-@media only screen and (min-width: 768px) {
-    .mobile-menu {
-        width: 480px;
-        height: 1024px;
-        flex-shrink: 0;
-
-        padding-top: 232px ;
-        padding-left: 64px;
-    }
     
-}
-@media only screen and (min-width:1280px) {
-    .mobile-menu {
-    display: none;
-    }
 }
 .menu-btn {
     position: absolute;
@@ -232,7 +101,126 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 text-transform: uppercase;
+
+line-height: 18px;
+letter-spacing: -0.02em;
 }
 .mobile-menu-link.active {
 font-weight: 700;
+}
+
+.mobile-menu-pic {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-camera:hover .link-camera-header + .icon-camera {
+    stroke: #BEA69E;
+}
+
+ /* tablet */
+@media only screen and (min-width:768px) {
+    .container {
+        max-width:768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .nav-header {
+        width: 504px;
+        margin-right: 14px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+    .logo-header {
+        margin-right: 301px;
+    }
+    .btn-sign-up {
+        width: 186px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+ 
+        border-radius: 12px;
+        background-color: #FFF;
+ 
+        color: #121212;
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+       font-weight: 700;
+       line-height: 1.5;
+       text-transform: uppercase;
+     }
+     .mobile-menu {
+        width: 480px;
+        height: 1024px;
+        flex-shrink: 0;
+
+        padding-top: 232px ;
+        padding-left: 64px;
+    }
+}
+@media only screen and (min-width:767.98px) {
+    .btn-camera {
+        display: none;
+    }
+}
+@media only screen and (max-width:767.98px) {
+    .btn-sign-up {
+        display: none;
+    }
+}
+/* dekstop */
+@media only screen and (min-width:1280px) {
+    .container {
+        max-width:1280px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .nav-header {
+        width: 822px;
+        margin-right: 20px;
+        display: flex;
+    }
+    .logo-header {
+        margin-right: 97px;
+     }
+     .list-nav {
+        display:flex;
+        gap: 28px;
+    }
+    .items-nav:hover , .items-nav:focus {
+        color: #BEA69E;
+    }
+    .items-nav {
+        color: #FFF;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .menu-burger {
+        display: none;
+    }
+    .btn-sign-up {
+        width: 238px;
+    }
+    .btn-sign-up:hover, .btn-sign-up:focus {
+        background-color: #1D1D1D;
+        color: #BEA69E;
+    }
+}
+@media only screen and (max-width:1279.98px) {
+    .list-nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .mobile-menu {
+    display: none;
+    }
 }

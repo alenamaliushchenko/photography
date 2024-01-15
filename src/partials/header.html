@@ -64,10 +64,32 @@
     <li class="mobile-menu-item">
       <a class="mobile-menu-link" href="#contacts">contacts</a>
     </li>
-  </ul>
-  <img
-    src="./img/Rectangle-6mobile-menu320@1x_result.jpg"
-    alt="camera"
-    width="329"
-  />
+
+    
+</ul>
+
+<picture>
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+          ./img/rectangle-6mobile-menu768@1x_result.jpg 1x,
+          ./img/rectangle-6mobile-menu786@2x_result.jpg 2x"
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+          ./img/rectangle-6mobile-menu320@1x_result.jpg 1x,
+          ./img/rectangle-6mobile-menu320@2x_result.jpg 2x"
+        />
+        <img
+          class="mobile-menu-pic"
+          src="./img/rectangle-6mobile-menu320@1x_result.jpg"
+          alt="camera"
+          width="329"
+          height="218"
+        />
+      </picture>
+ 
 </div>
