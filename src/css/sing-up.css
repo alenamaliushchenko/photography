@@ -1,4 +1,4 @@
-.sign-up .container {
+.sign-up.container {
   max-width: 335px;
 }
 .sign-up-title {
@@ -16,17 +16,60 @@
   letter-spacing: -0.02em;
   margin-bottom: 20px;
 }
-.sign-up-form {
+.sign-up-background {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .sign-up.container {
+    max-width: 480px;
+  }
+  .sign-up-title {
+    font-size: 48px;
+    line-height: 1.12;
+  }
+  .sign-up-description {
+    max-width: 480px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sign-up.section {
+    display: flex;
+  }
+  .sign-up.container {
+    max-width: 480px;
+    flex: 1;
+  }
+  .sign-up-background {
+    max-width: 540px;
+    flex: 1;
+    visibility: visible;
+  }
+  .sign-up-title {
+    font-size: 48px;
+    line-height: 1.12;
+  }
+  .sign-up-description {
+    max-width: 480px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* .sign-up-form {
   padding-top: 20px;
   padding-bottom: 20px;
-}
+} */
+
 .sign-up-wrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
-}
-.sign-up-wrapper label {
-  display: none; /* Цей рядок, якщо щоб приховати label */
 }
 
 .form-field {
@@ -40,6 +83,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 14px 18px 14px;
   border-color: #ffffff33;
+  background-color: transparent;
 }
 .sign-up-wrapper .form-field:hover,
 .sign-up-wrapper .form-field:focus,
@@ -59,7 +103,37 @@
 .sign-up-wrapper textarea {
   color: #fff;
   resize: none;
+  background-color: transparent;
 }
+@media only screen and (min-width: 768px) {
+  .sign-up-wrapper {
+    margin-bottom: 14px;
+  }
+  .form-field {
+    font-size: 16px;
+    line-height: 1.25px;
+    height: 60px;
+    padding: 20px 18px 20px;
+  }
+  .sign-up-wrapper #user-message {
+    height: 119px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .sign-up-wrapper {
+    margin-bottom: 14px;
+  }
+  .form-field {
+    font-size: 16px;
+    line-height: 1.25;
+    height: 60px;
+    padding: 20px 18px 20px;
+  }
+  .sign-up-wrapper #user-message {
+    height: 119px;
+  }
+}
+
 .form-btn {
   display: flex;
   justify-content: center;
@@ -79,6 +153,27 @@
   font-weight: 700;
   line-height: 1.25;
 }
+
+@media only screen and (min-width: 768px) {
+  .form-btn {
+    width: 480px;
+    height: 60px;
+  }
+  .send-text {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .form-btn {
+    width: 480px;
+    height: 60px;
+  }
+  .send-text {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
 .privacy-policy {
   color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
@@ -90,4 +185,19 @@
 .privacy-policy-link {
   text-decoration-line: underline;
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (min-width: 768px) {
+  .privacy-policy {
+    max-width: 480px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .privacy-policy {
+    font-size: 14px;
+    line-height: 1.29em;
+  }
 }
