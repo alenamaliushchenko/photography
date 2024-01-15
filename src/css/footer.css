@@ -141,15 +141,12 @@
 
     .footer-inside-wrapper {
         display: flex;
+        margin-bottom: 50px;
     }
     
     .logo-footer {
         margin-bottom: 25px;
         margin-right: 77px;
-    }
-    
-   .footer-contacts {
-        margin-bottom: 133px;
     }
     
     .footer-block-menu {
@@ -159,9 +156,9 @@
 
     .footer-form {
         margin-top: 0;
-        }
+    }
     
-   .footer-form-input {
+    .footer-form-input {
         max-width: 178px;
     }
 }
@@ -173,6 +170,10 @@
         background-size: 1278px 331px;
     }
     
+    .footer-inside-wrapper {
+        margin-bottom: 74px;
+    }
+
     .footer-wrapper {
         max-width: 1280px;
         max-height: 880px;
