@@ -100,6 +100,16 @@
   stroke: #777777;
 }
 
+.courses-list-link:hover,
+.courses-list-link:focus {
+  background-color: #bea69e;
+}
+
+.courses-list-link:hover > .courses-card-icon,
+.courses-list-link:focus > .courses-card-icon {
+  stroke: #ffffff;
+}
+
 @media only screen and (min-width: 768px) {
   .our-courses {
     display: flex;
