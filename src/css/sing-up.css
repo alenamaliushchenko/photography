@@ -52,7 +52,11 @@
 .sign-up-wrapper textarea {
   color: #fff;
   resize: none;
+
 }
+
+
+
 .form-btn {
   display: flex;
   justify-content: center;

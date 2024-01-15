@@ -1,8 +1,126 @@
-<section class="hero">
-  <div class="conteiner hero-wraper">
-    <h1 class="titel-hero">
-      Discover the magic of <span class="accent">photography</span> in our
-      school
+<section class="hero-section section">
+  <div class="container hero-wraper">
+    <h1 class="hero-titel">
+      Discover the magic of
+      <span class="accent hero-accent">photography</span> in our school
     </h1>
+    <p class="hero-desc">
+      Our photography school offers an unforgettable journey, where you can
+      learn the basics of composition, master technical skills, translate your
+      unique ideas.
+    </p>
+
+    <div class="hero-content-wraper">
+      <div class="hero-wraper-list">
+        <ul class="hero-list">
+          <li class="hero-list-item">
+            <picture>
+              <!-- Desktop screen -->
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/girl-1hero1280-768@1x_result.png 1x,
+                  ./img/girl-1hero1280-768@2x_result.png 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/girl-1hero-img320@1x_result.png 1x,
+                  ./img/girl-1hero-img320@2x_result.png 2x
+                "
+              />
+              <img
+                class="hero-list-pic"
+                src="/img/girl-1hero-img320@1x_result.png"
+                alt="photo woman"
+                width="40"
+                height="40"
+              />
+            </picture>
+          </li>
+          <li class="hero-list-item">
+            <picture>
+              <!-- Desktop screen -->
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/boyhero1280-768@1x_result.png 1x,
+                  ./img/boyhero1280-768@2x_result.png 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/boyhero-img320@1x_result.png 1x,
+                  ./img/boyhero-img320@2x_result.png 2x
+                "
+              />
+              <img
+                class="hero-list-pic"
+                src="./img/boyhero-img320@1x_result.png"
+                alt="Dark chocolate with orange"
+                width="40"
+                height="40"
+              />
+            </picture>
+          </li>
+          <li class="hero-list-item">
+            <picture>
+              <!-- Desktop screen -->
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/girlhero1280-768@1x_result.png 1x,
+                  ./img/girlhero1280-768@2x_result.png 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/girlhero-img320@1x_result.png 1x,
+                  ./img/girlhero-img320@2x_result.png 2x
+                "
+              />
+              <img
+                class="hero-list-pic"
+                src="./img/girlhero-img320@1x_result.png"
+                alt="Dark chocolate with orange"
+                width="40"
+                height="40"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <div class="hero-link-wraper">
+          <a href="" class="hero-link-revies">Our happy students </a
+          ><span class="hero-icon-wraper"
+            ><svg class="hero-link-icon" width="18" height="10">
+              <use href="./img/icons.svg#arrow-stroke"></use></svg
+          ></span>
+        </div>
+      </div>
+      <div class="hero-revies-wraper">
+        <span class="revies-img-wraper"
+          ><img
+            class="hero-revies-img"
+            src="./img/starstar-hero_result.png"
+            alt="star"
+            width="20"
+            height="20"
+        /></span>
+        <div class="hero-caption-wraper">
+          <h3 class="hero-caption-titel">Reviews</h3>
+          <p class="hero-caption-desc">+1500</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
