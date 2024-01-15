@@ -1,18 +1,3 @@
-.mentors-wrapper {
-  max-width: 335px;
-  height: 1152px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media only screen and (min-width: 768px) {
-  .mentors-wrapper {
-    max-width: 768px;
-  }
-}
-
 .our-mentors-section {
   padding: 120px 0;
 }
@@ -27,14 +12,6 @@
   margin-left: 20px;
 }
 
-@media only screen and (min-width: 768px) {
-  .our-mentors-title {
-    font-size: 48px;
-    line-height: 1.12;
-    margin-left: 32px;
-  }
-}
-
 .accent {
   color: #bea69e;
 }
@@ -47,26 +24,10 @@
   gap: 40px;
 }
 
-@media only screen and (min-width: 768px) {
-  .description-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 93px;
-    column-gap: 100px;
-  }
-}
-
 .list-our-mentors {
   width: 185px;
   height: 240px;
   margin-bottom: 40px;
-}
-
-@media only screen and (min-width: 768px) {
-  .list-our-mentors {
-    width: 194px;
-    height: 250px;
-  }
 }
 
 .mentors-item-img {
@@ -74,24 +35,19 @@
   padding-bottom: 16px;
 }
 
+.mentors-item{
+    flex-direction: column;
+    text-align: center;
+}
+
 .mentors-item-name {
   color: #fff;
-  text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  flex-direction: column;
   width: 174px;
   padding-bottom: 4px;
 }
-
-@media only screen and (min-width: 768px) {
-  .mentors-item-name {
-    font-size: 28px;
-    line-height: 1.14;
-  }
-}
-
 .mentor-element {
   width: 194px;
 }
@@ -106,8 +62,43 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .mentors-wrapper {
+    max-width: 768px;
+  }
+  .our-mentors-title {
+    font-size: 48px;
+    line-height: 1.12;
+    margin-left: 32px;
+    padding-bottom: 50px;
+  }
+  .description-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 93px;
+    column-gap: 100px;
+  }
+   .list-our-mentors {
+    width: calc((100%-100px*1)/2);
+    height: 250px;
+  }
+  .mentors-item-name {
+    font-size: 28px;
+    line-height: 1.14;
+  }
   .mentors-item-text {
     font-size: 14px;
     line-height: 1.28;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .mentors-wrapper {
+    max-width: 1280px;
+  }
+  .our-mentors-title {
+    margin-left: 100px;
+  }
+  .list-our-mentors {
+    width: calc((100%-100px*3)/4);
   }
 }
