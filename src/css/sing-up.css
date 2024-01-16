@@ -131,6 +131,7 @@
 }
 
 /* Оформлення кнопки в формі*/
+
 .form-btn {
   display: flex;
   justify-content: center;
