@@ -38,7 +38,7 @@
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.0800"
                 d="M8 24l16-16M13.333 8h10.667v10.667"></path>
         </symbol>
-        <symbol id="icon-Nav" viewBox="0 0 32 32">
+        <symbol id="icon-nav" viewBox="0 0 32 32">
             <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4"
                 d="M6.070 8.351h24.73M6.070 21.927h24.73M13.722 15.139h17.078"></path>
         </symbol>

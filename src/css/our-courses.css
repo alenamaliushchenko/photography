@@ -98,6 +98,7 @@
   width: 20px;
   height: 20px;
   stroke: #777777;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .courses-list-link:hover,
@@ -116,58 +117,56 @@
     flex-direction: column;
   }
 
-    .our-courses {
-        display: flex;
-        flex-direction: column;
-    }
+  .our-courses {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .courses-dacr {
-        display: flex;
-        flex-direction: row;
-        gap: 58px;
-        margin-bottom: 50px;
+  .courses-dacr {
+    display: flex;
+    flex-direction: row;
+    gap: 58px;
+    margin-bottom: 50px;
+  }
 
-    }
+  .courses-header {
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -1.92px;
+  }
 
-    .courses-header {
-        font-size: 48px;
-        line-height: 54px;
-        letter-spacing: -1.92px;
-    }
+  .courses-text {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+    width: 381px;
+  }
 
-    .courses-text {
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: -0.32px;
-        width: 381px;
-    }
+  .courses-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    .courses-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  .courses-list:last-child {
+    justify-content: flex-start;
+  }
 
-    .courses-list:last-child {
-        justify-content: flex-start;
-    }
+  .courses-list-item {
+    padding: 32px;
+    max-width: 342px;
+  }
+  .courses-card-link-box {
+    margin-bottom: 32px;
+  }
+  .courses-card-hrader {
+    margin-bottom: 180px;
+  }
 
-    .courses-list-item {
-        padding: 32px;
-        max-width: 342px;
-    }
-    .courses-card-link-box {
-        margin-bottom: 32px;
-    }
-    .courses-card-hrader {
-        margin-bottom: 180px;
-    }
-
-    .courses-card-dscr {
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: -0.32px;
-    }
-
+  .courses-card-dscr {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+  }
 
   .courses-card-dscr {
     font-size: 16px;
@@ -177,13 +176,12 @@
 }
 @media only screen and (min-width: 1280px) {
   .courses-text {
-
     width: 405px;
   }
   .courses-list-item {
     width: calc((100% - 20px * 2) / 3);
   }
   .courses-dacr {
-    gap:410px;
+    gap: 410px;
   }
 }

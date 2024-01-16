@@ -24,33 +24,36 @@
         </li>
       </ul>
 
-      <button class="btn-camera">
-        <a class="link-camera-header" href="#sign-up">
-          <svg class="icon-camera" width="16" height="16">
-            <use href="./img/icons.svg#icon-bi_camera-fill"></use>
-          </svg>
-        </a>
-      </button>
-      <button class="menu-burger" type="button" aria-label="open-menu-burger">
+      <a class="btn-camera" href="#sign-up">
+        <svg class="icon-camera" width="16" height="16">
+          <use href="./img/icons.svg#icon-bi_camera-fill"></use>
+        </svg>
+      </a>
+
+      <button
+        class="menu-burger js-open-menu"
+        type="button"
+        aria-label="open-menu-burger"
+      >
         <svg class="icon-burger" width="32" height="22">
           <use href="./img/icons.svg#icon-nav"></use>
         </svg>
       </button>
     </nav>
 
-    <button class="btn-sign-up" type="button" href="#sign-up">SIGN UP</button>
+    <a class="btn-sign-up" type="button" href="#sign-up">SIGN UP</a>
   </div>
 </header>
 <!-- Mobile menu -->
-<div class="mobile-menu" style="display: none">
-  <button class="menu-btn" type="button">
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-btn js-close-menu" type="button">
     <svg class="menu-btn-icon" width="32" height="32">
       <use href="../img/icons.svg#icon-x"></use>
     </svg>
   </button>
   <ul class="mobile-menu-list">
     <li class="mobile-menu-item">
-      <a class="mobile-menu-link active" href="#about">About us</a>
+      <a class="mobile-menu-link" href="#about">About us</a>
     </li>
     <li class="mobile-menu-item">
       <a class="mobile-menu-link" href="#courses">Our courses</a>
