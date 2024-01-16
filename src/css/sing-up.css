@@ -16,6 +16,9 @@
   letter-spacing: -0.02em;
   margin-bottom: 40px;
 }
+.sign-up-laptop {
+  display: none;
+}
 .sign-up-picture {
   visibility: hidden;
 }
@@ -44,6 +47,9 @@
   .sign-up.content {
     max-width: 480px;
     height: 578px;
+  }
+  .sign-up-laptop {
+    display: block;
   }
   .sign-up-picture {
     visibility: visible;
