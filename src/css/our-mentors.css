@@ -1,5 +1,5 @@
 .our-mentors-section {
-  padding: 120px 0;
+  padding: 150px 0;
 }
 
 .our-mentors-title {
@@ -9,7 +9,6 @@
   line-height: 1.14;
   letter-spacing: -0.04em;
   padding-bottom: 40px;
-  margin-left: 20px;
 }
 
 .accent {
@@ -27,17 +26,19 @@
 .list-our-mentors {
   width: 185px;
   height: 240px;
-  margin-bottom: 40px;
+}
+
+.mentors-img-adapt {
+  margin-bottom: 16px;
 }
 
 .mentors-item-img {
   border-radius: 50%;
-  padding-bottom: 16px;
 }
 
-.mentors-item{
-    flex-direction: column;
-    text-align: center;
+.mentors-item {
+  flex-direction: column;
+  text-align: center;
 }
 
 .mentors-item-name {
@@ -46,10 +47,7 @@
   font-weight: 500;
   line-height: 1.2;
   width: 174px;
-  padding-bottom: 4px;
-}
-.mentor-element {
-  width: 194px;
+  margin-bottom: 4px;
 }
 
 .mentors-item-text {
@@ -68,7 +66,6 @@
   .our-mentors-title {
     font-size: 48px;
     line-height: 1.12;
-    margin-left: 32px;
     padding-bottom: 50px;
   }
   .description-list {
@@ -77,8 +74,8 @@
     row-gap: 93px;
     column-gap: 100px;
   }
-   .list-our-mentors {
-    width: calc((100%-100px*1)/2);
+  .list-our-mentors {
+    width: calc((100% - 100px * 1) / 2);
     height: 250px;
   }
   .mentors-item-name {
@@ -95,10 +92,12 @@
   .mentors-wrapper {
     max-width: 1280px;
   }
-  .our-mentors-title {
-    margin-left: 100px;
-  }
+
   .list-our-mentors {
-    width: calc((100%-100px*3)/4);
+    width: 180px;
+  }
+
+  .mentors-element {
+    width: 194px;
   }
 }
