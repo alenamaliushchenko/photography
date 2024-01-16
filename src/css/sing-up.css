@@ -1,4 +1,4 @@
-.sign-up.container {
+.sign-up.content {
   max-width: 335px;
 }
 .sign-up-title {
@@ -16,12 +16,12 @@
   letter-spacing: -0.02em;
   margin-bottom: 40px;
 }
-.sign-up-background {
+.sign-up-picture {
   visibility: hidden;
 }
 
 @media only screen and (min-width: 768px) {
-  .sign-up.container {
+  .sign-up.content {
     max-width: 480px;
   }
   .sign-up-title {
@@ -37,16 +37,15 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .sign-up.section {
+  .sign-up.container {
     display: flex;
     justify-content: space-between;
   }
-  .sign-up.container {
+  .sign-up.content {
     max-width: 480px;
     height: 578px;
   }
-  .sign-up-background {
-    max-width: 540px;
+  .sign-up-picture {
     visibility: visible;
   }
   .sign-up-title {
