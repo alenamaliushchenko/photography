@@ -17,14 +17,14 @@
     text-transform: uppercase;
     text-align: center;    
     white-space: nowrap;
-    animation-name: advertisementTitle;
+    animation-name: marqueeLine;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
 
-@-webkit-keyframes advertisementTitle {
+@-webkit-keyframes marqueeLine {
     from {
         -webkit-transform: translateX(0);
     }
