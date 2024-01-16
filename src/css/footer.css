@@ -40,9 +40,12 @@
   max-height: 535px;
 }
 
-.logo-footer {
-  fill: #fff;
+.logo-footer-link {
   margin-bottom: 16px;
+}
+
+.logo-footer-icon {
+  fill: #fff;
 }
 
 .footer-contacts {
