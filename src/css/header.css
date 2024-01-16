@@ -1,0 +1,231 @@
+.header {
+  background-color: #121212;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container-header {
+  display: flex;
+}
+/* phone */
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.nav-header {
+  /* phone */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #121212;
+
+  width: 335px;
+  flex-shrink: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-header {
+  fill: #ffffff;
+  /* phone */
+  margin-right: 98px;
+}
+.btn-camera {
+  margin-right: 14px;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.link-camera-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-camera {
+  fill: #bea69e66;
+}
+.menu-burger {
+  background-color: #121212;
+}
+.icon-burger {
+  stroke: #ffffff;
+}
+.mobile-menu {
+  /* mobile*/
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 180px;
+  padding-left: 20px;
+
+  background-color: #bea69e;
+  width: 218px;
+  height: 812px;
+  flex-shrink: 0;
+}
+.menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #bea69e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-btn-icon {
+  stroke: #121212;
+}
+.mobile-menu-list {
+  margin-bottom: 133px;
+}
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.mobile-menu-link {
+  color: #121212;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  line-height: 18px;
+  letter-spacing: -0.02em;
+}
+.mobile-menu-link.active {
+  font-weight: 700;
+}
+
+.mobile-menu-pic {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.btn-camera:hover .link-camera-header + .icon-camera,
+.btn-camera:focus .link-camera-header + .icon-camera {
+  fill: #bea69e;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .nav-header {
+    width: 504px;
+    margin-right: 14px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .logo-header {
+    margin-right: 301px;
+  }
+  .btn-sign-up {
+    width: 186px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+    background-color: #fff;
+
+    color: #121212;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  .mobile-menu {
+    width: 480px;
+    height: 1024px;
+    flex-shrink: 0;
+
+    padding-top: 232px;
+    padding-left: 64px;
+  }
+}
+@media only screen and (min-width: 767.98px) {
+  .btn-camera {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .btn-sign-up {
+    display: none;
+  }
+}
+/* dekstop */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .nav-header {
+    width: 822px;
+    margin-right: 20px;
+    display: flex;
+  }
+  .logo-header {
+    margin-right: 97px;
+  }
+  .list-nav {
+    display: flex;
+    gap: 28px;
+  }
+  .items-nav:hover,
+  .items-nav:focus {
+    color: #bea69e;
+  }
+  .items-nav {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .menu-burger {
+    display: none;
+  }
+  .btn-sign-up {
+    width: 238px;
+  }
+  .btn-sign-up:hover,
+  .btn-sign-up:focus {
+    background-color: #1d1d1d;
+    color: #bea69e;
+  }
+}
+@media only screen and (max-width: 1279.98px) {
+  .list-nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .mobile-menu {
+    display: none;
+  }
+}
