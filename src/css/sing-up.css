@@ -44,11 +44,9 @@
   .sign-up.container {
     max-width: 480px;
     height: 578px;
-    flex: 1;
   }
   .sign-up-background {
     max-width: 540px;
-    flex: 1;
     visibility: visible;
   }
   .sign-up-title {
