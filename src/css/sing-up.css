@@ -93,6 +93,7 @@
   border-color: #ffffff80;
   background-color: #121212;
   color: #fff;
+  outline: none;
 }
 .sign-up-wrapper #user-message {
   height: 112px;
@@ -150,8 +151,8 @@
   cursor: pointer;
 }
 .form-btn:hover,
-.form-btn:focus {
-  outline: none;
+.form-btn:focus,
+.form-btn:active {
   background-color: #1d1d1d;
 }
 .send-text {
@@ -161,7 +162,9 @@
   font-weight: 700;
   line-height: 1.25;
 }
-.send-text:hover {
+.form-btn:hover .send-text,
+.form-btn:focus .send-text,
+.form-btn:active .send-text {
   color: #bea69e;
 }
 .privacy-policy {
