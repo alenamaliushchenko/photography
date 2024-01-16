@@ -175,14 +175,3 @@
     gap: 410px;
   }
 }
-@media only screen and (min-width:1280px) {
-    .courses-text {
-        width: 565px;
-    }
-    .courses-list-item{
-        max-width: 400px;
-    }
-    .courses-dacr {
-        gap: 410px;
-    }
-}
