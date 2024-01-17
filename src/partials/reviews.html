@@ -5,17 +5,22 @@
       <li class="reviews-item" id="reviews-section">
         <div class="reviews-item-rate">
           <div class="reviews-item-student">
-            <img
-              class="reviews-foto"
-              width="56"
-              height="56"
-              srcset="
-                ./img/userreviews@1x_result.png 1x,
-                ./img/userreviews@2x_result.png 2x
-              "
-              src="./img/userreviews@1x_result.png"
-              alt="reviews-foto-man"
-            />
+            <picture>
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./img/userreviews@1x_result.png 1x,
+                  ./img/userreviews@2x_result.png 2x
+                "
+              />
+              <img
+                class="reviews-foto"
+                width="56"
+                height="56"
+                src="./img/userreviews@1x_result.png"
+                alt="reviews-foto-man"
+              />
+            </picture>
             <div class="reviews-student">
               <h3 class="reviews-student-name">Abraham Baker</h3>
               <p class="reviews-student-position">Student</p>
@@ -61,17 +66,22 @@
       <li class="reviews-item">
         <div class="reviews-item-rate">
           <div class="reviews-item-student">
-            <img
-              class="reviews-foto"
-              srcset="
-                ./img/userreviews@1x-1_result.png 1x,
-                ./img/userreviews@2x-1_result.png 2x
-              "
-              src="./img/userreviews@1x-1_result.png"
-              alt="reviews-foto-man"
-              width="56"
-              height="56"
-            />
+            <picture>
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./img/userreviews@1x-1_result.png 1x,
+                  ./img/userreviews@2x-1_result.png 2x
+                "
+              />
+              <img
+                class="reviews-foto"
+                src="./img/userreviews@1x-1_result.png"
+                alt="reviews-foto-man"
+                width="56"
+                height="56"
+              />
+            </picture>
             <div class="reviews-student">
               <h3 class="reviews-student-name">Amanda Lowery</h3>
               <p class="reviews-student-position">Student</p>
