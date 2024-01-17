@@ -40,15 +40,12 @@
   max-height: 535px;
 }
 
-.logo-footer-link {
-  margin-bottom: 16px;
-}
-
 .logo-footer-icon {
   fill: #fff;
 }
 
 .footer-contacts {
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -188,8 +185,7 @@
     margin-bottom: 50px;
   }
 
-  .logo-footer {
-    margin-bottom: 25px;
+  .logo-footer-link {
     margin-right: 77px;
   }
 
@@ -198,6 +194,7 @@
     margin-right: 0;
   }
   .footer-contacts {
+    margin-top: 25px;
     margin-bottom: 0;
   }
   .footer-form {
@@ -227,7 +224,7 @@
     max-height: 880px;
   }
 
-  .logo-footer {
+  .logo-footer-link {
     margin-right: 304px;
   }
 
