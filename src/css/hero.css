@@ -7,29 +7,16 @@
 
   background-image: url('../img/graphicheaderhero320@1x_result.png');
 }
-@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: url('../img/graphicheaderhero320@2x_result.png');
-  }
-}
+
 @media only screen and (min-width: 768px) {
   .hero-section {
     background-image: url('../img/graphicfooter-header768@1x_result.png');
   }
 }
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: url('../img/graphicfooter-header768@2x_result.png');
-  }
-}
+
 @media only screen and (min-width: 1280px) {
   .hero-section {
     background-image: url('../img/graphicfooter-header1280@1x_result.png');
-  }
-}
-@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: url('../img/graphicfooter-header1280@2x_result.png');
   }
 }
 
@@ -45,10 +32,21 @@
 
   background-image: url('../img/rectangle-5heroback320@1x_result.png');
 }
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .hero-wrapper {
+    background-image: url('../img/rectangle-5heroback320@2x_result.png');
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .hero-wraper {
     background-image: url('../img/rectangle-5heroback768@1x_result.png');
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-wrapper {
+    background-image: url('../img/rectangle-5heroback768@2x_result.png');
   }
 }
 
