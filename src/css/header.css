@@ -57,14 +57,14 @@
   background-color: #121212;
 }
 
-.menu-burger:focus .icon-burger {
+/* .menu-burger:focus .icon-burger {
   fill: #bea69e;
-}
+} */
 
-.icon-burger {
+/* .icon-burger {
   fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .menu-container {
   /* mobile*/
   z-index: 999;
