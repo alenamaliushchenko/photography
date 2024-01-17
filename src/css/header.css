@@ -205,6 +205,9 @@
 }
 /* dekstop */
 @media only screen and (min-width: 1280px) {
+  .link-logo-header {
+    margin: 0;
+  }
   .nav-header {
     max-width: 822px;
     min-width: 822px;
