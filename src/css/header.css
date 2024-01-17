@@ -172,7 +172,6 @@
   .menu-container {
     width: 480px;
     height: 1024px;
-    flex-shrink: 0;
 
     padding-top: 232px;
     padding-left: 64px;
