@@ -53,6 +53,7 @@
 }
 .icon-burger {
   stroke: #ffffff;
+  fill: #ffffff;
 }
 .menu-container {
   /* mobile*/
@@ -92,6 +93,7 @@
 .menu-btn:focus .menu-btn-icon,
 .menu-btn:active .menu-btn-icon {
   stroke: #ffffff;
+  fill: #ffffff;
 }
 
 .menu-btn-icon {
