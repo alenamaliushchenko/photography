@@ -1,3 +1,7 @@
+.about-us-section {
+  padding-top: 80px;
+}
+
 .about-us-title {
   font-size: 28px;
   font-weight: 500;
@@ -20,6 +24,9 @@
 .list-description-item {
 }
 @media only screen and (min-width: 768px) {
+  .about-us-section {
+    padding-top: 100px;
+  }
   .about-us-title {
     font-size: 48px;
     margin-bottom: 50px;
@@ -40,6 +47,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  .about-us-section {
+    padding-top: 150px;
+  }
+
   .about-content {
     display: flex;
     max-width: 1080px;
