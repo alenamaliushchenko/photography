@@ -9,21 +9,13 @@
 
   background-image: url('../img/graphicfooterlineback320@1x.png');
 }
-@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
-  .footer {
-    background-image: url('../img/graphicfooterlineback320@1x@2x.png');
-  }
-}
+
 @media only screen and (min-width: 768px) {
   .footer {
     background-image: url('../img/graphicfooterlineback768@1x.png');
   }
 }
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .footer {
-    background-image: url('../img/graphicfooterlineback768@2x.png');
-  }
-}
+
 @media only screen and (min-width: 1280px) {
   .footer {
     background-image: url('../img/graphicfooterlineback1280@1x.png');
