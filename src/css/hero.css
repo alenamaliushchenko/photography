@@ -178,6 +178,7 @@
     background-size: 393px 434px;
   }
   .hero-titel {
+    max-width: 517px;
     font-size: 60px;
     line-height: calc(64 / 60);
   }
