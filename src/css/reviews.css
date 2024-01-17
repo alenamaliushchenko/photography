@@ -60,7 +60,7 @@
   font-size: 28px;
   font-weight: 500;
   line-height: calc(32 / 28); /* 114.286% */
-  letter-spacing: -0, 04em;
+  letter-spacing: -0.04em;
   margin-bottom: 40px;
 }
 
@@ -83,7 +83,7 @@
   color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
   line-height: calc(16 / 12); /* 133.333% */
-  letter-spacing: -0, 02em;
+  letter-spacing: -0.02em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -95,7 +95,7 @@
 .reviews-review-text {
   font-size: 14px;
   line-height: calc(18 / 14); /* 128.571% */
-  letter-spacing: -0, 02em;
+  letter-spacing: -0.02em;
 }
 
 @media only screen and (min-width: 768px) {
