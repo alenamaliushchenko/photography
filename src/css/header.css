@@ -17,21 +17,26 @@
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: #121212;
-  padding-left: 20px;
+  padding: 15px 20px;
   max-width: 335px;
   flex-shrink: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.link-logo-header {
+  margin-right: 90px;
+}
+.link-logo-header:hover .logo-header,
+.link-logo-header:focus .logo-header {
+  fill: #bea69e;
+}
 
 .logo-header {
   fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* phone */
-  margin-right: 98px;
 }
 .btn-camera {
   margin-right: 14px;
@@ -51,9 +56,14 @@
 .menu-burger {
   background-color: #121212;
 }
+
+.menu-burger:focus .icon-burger {
+  fill: #bea69e;
+}
+
 .icon-burger {
-  stroke: #ffffff;
   fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-container {
   /* mobile*/
@@ -92,12 +102,11 @@
 .menu-btn:hover .menu-btn-icon,
 .menu-btn:focus .menu-btn-icon,
 .menu-btn:active .menu-btn-icon {
-  stroke: #ffffff;
   fill: #ffffff;
 }
 
 .menu-btn-icon {
-  stroke: #121212;
+  fill: #121212;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu-list {
@@ -137,15 +146,20 @@
 
 /* tablet */
 @media only screen and (min-width: 768px) {
+  .menu-btn-icon {
+    width: 40px;
+    height: 40px;
+  }
   .nav-header {
     max-width: 504px;
     margin-right: 14px;
     padding-top: 22px;
     padding-bottom: 22px;
   }
-  .logo-header {
+  .link-logo-header {
     margin-right: 301px;
   }
+
   .btn-sign-up {
     width: 186px;
     display: inline-flex;
