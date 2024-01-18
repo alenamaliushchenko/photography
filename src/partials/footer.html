@@ -15,6 +15,8 @@
           <a
             class="footer-contacts-link"
             href="https://maps.app.goo.gl/qrSqHf4Gey79KYae9"
+            rel="noreferrer"
+            target="_blank"
           >
             Ukraine, Kyiv</a
           >
@@ -74,10 +76,11 @@
       <form class="footer-form">
         <input
           class="footer-form-input"
-          type="text"
-          name="your-email"
+          type="email"
+          name="email"
+          required
           placeholder="Enter your email"
-          pattern="[A-Za-z0-9]{6,}"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         />
         <button class="footer-btn" type="submit">Go</button>
       </form>

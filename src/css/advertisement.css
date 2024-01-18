@@ -7,7 +7,7 @@
 .advertisement-linner {
   overflow: hidden;
   display: flex;
-  gap: 60px;
+  gap: 10px;
 }
 
 .advertisement-title {
@@ -16,7 +16,8 @@
   line-height: 1.14;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  text-align: center;
+
+  text-align: left;
   white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 5s;
@@ -38,7 +39,9 @@
   .advertisement-section {
     padding: 24px 0px;
   }
-
+  .advertisement-linner {
+    gap: 50px;
+  }
   .advertisement-title {
     font-size: 40px;
     line-height: 1.25;

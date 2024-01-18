@@ -8,7 +8,6 @@
 }
 .container-header {
   display: flex;
-  padding: 0;
 }
 /* phone */
 
@@ -19,11 +18,13 @@
   background-color: #121212;
   padding: 15px 20px;
   max-width: 335px;
-  flex-shrink: 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.list-nav {
+  display: none;
 }
 .link-logo-header {
   margin-right: 90px;
@@ -100,8 +101,7 @@
   justify-content: center;
 }
 .menu-btn:hover .menu-btn-icon,
-.menu-btn:focus .menu-btn-icon,
-.menu-btn:active .menu-btn-icon {
+.menu-btn:focus .menu-btn-icon {
   fill: #ffffff;
 }
 
@@ -119,7 +119,6 @@
   color: #121212;
 
   font-size: 14px;
-  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
 
@@ -138,10 +137,27 @@
   bottom: 0;
   right: 0;
 }
+.btn-sign-up {
+  display: none;
+}
 
 .btn-camera:hover .icon-camera,
 .btn-camera:focus .icon-camera {
   fill: #bea69e;
+}
+
+@media only screen and (max-width: 375px) {
+  .header {
+    width: 100%;
+  }
+  .link-logo-header {
+    margin-right: auto;
+  }
+
+  .nav-header {
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
 
 /* tablet */
@@ -169,7 +185,6 @@
     background-color: #fff;
     color: #121212;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.5;
     text-transform: uppercase;
@@ -192,16 +207,13 @@
     width: 40px;
     height: 28px;
   }
-}
-@media only screen and (min-width: 767.98px) {
   .btn-camera {
     display: none;
   }
 }
+@media only screen and (min-width: 767.98px) {
+}
 @media only screen and (max-width: 767.98px) {
-  .btn-sign-up {
-    display: none;
-  }
 }
 /* dekstop */
 @media only screen and (min-width: 1280px) {
@@ -223,16 +235,12 @@
     gap: 28px;
   }
   .items-nav:hover,
-  .items-nav:focus,
-  .items-nav:active {
+  .items-nav:focus {
     color: #bea69e;
   }
   .items-nav {
     color: #fff;
-    font-family: DM Sans;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -242,10 +250,5 @@
   }
   .btn-sign-up {
     width: 238px;
-  }
-}
-@media only screen and (max-width: 1279.98px) {
-  .list-nav {
-    display: none;
   }
 }

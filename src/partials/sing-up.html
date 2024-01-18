@@ -13,10 +13,9 @@
             type="text"
             id="user-name"
             name="user-name"
-            required=""
+            required
             placeholder="Enter your name"
-            pattern="[A-Za-zА-Яа-яЁё\s]{2,}"
-            title="Please enter at least 2 characters, only letters and spaces are allowed"
+            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє\s\-]+"
           />
         </div>
         <div class="sign-up-wrapper">
@@ -25,22 +24,20 @@
             type="email"
             name="user-email"
             id="user-email"
-            required=""
+            required
             minlength="2"
             placeholder="Enter your email"
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-            title="Please enter a valid email address"
           />
         </div>
         <div class="sign-up-wrapper">
           <textarea
-            class="form-field"
+            class="form-field sign-up-form-textarea"
             name="user-message"
             id="user-message"
-            required=""
+            required
             maxlength="255"
             placeholder="Message"
-            title="Please enter your message (up to 255 characters)"
           ></textarea>
         </div>
         <button class="form-btn" type="submit">
